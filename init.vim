@@ -7,9 +7,7 @@ Plug 'nvim-lualine/lualine.nvim'
 " to make it look beautiful
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'nvim-tree/nvim-web-devicons'
-
-" for completition
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 call plug#end()
 
@@ -25,7 +23,6 @@ call plug#end()
 :command Refresh source ~/.config/nvim/init.vim
 
 :source ~/.config/nvim/initlua.lua
-:source ~/.config/nvim/coc.lua
 
 :NvimTreeToggle
 
